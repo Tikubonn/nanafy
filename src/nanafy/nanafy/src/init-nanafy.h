@@ -1,0 +1,26 @@
+#include <stddef.h>
+
+extern void init_nanafy (
+	void*,
+	size_t,
+	void*,
+	size_t,
+	void*,
+	size_t,
+	nanafy_symbol*,
+	size_t,
+	void*,
+	size_t,
+	size_t*,
+	size_t,
+	nanafy_symname_table_hash_func,
+	nanafy_relocation*,
+	size_t,
+	nanafy_relocation*,
+	size_t,
+	nanafy_relocation*,
+	size_t,
+	nanafy_local_relocation*,
+	size_t,
+	nanafy_info*,
+	nanafy*);

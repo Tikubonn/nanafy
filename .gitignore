@@ -1,0 +1,10 @@
+*.o
+*.lib
+*.dll
+*.exe
+dist/*.lib
+dist/*.dll
+dist/*.h
+bin/*.lib
+bin/*.dll
+bin/*.exe
