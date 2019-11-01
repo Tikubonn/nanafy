@@ -84,6 +84,11 @@ typedef struct nanafy_relocation_info {
 	DWORD relocation_type;
 } nanafy_relocation_info;
 
+typedef enum nanafy_machine {
+	NANAFY_X86_MACHINE,
+	NANAFY_X64_MACHINE,
+} nanafy_machine;
+
 typedef struct nanafy_info {
 	size_t relocation_info_count;
 	nanafy_relocation_info *relocation_infos;

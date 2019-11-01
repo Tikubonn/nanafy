@@ -364,6 +364,11 @@ typedef struct nanafy_relocation_info {
 	DWORD relocation_type;
 } nanafy_relocation_info;
 
+typedef enum nanafy_machine {
+	NANAFY_X86_MACHINE,
+	NANAFY_X64_MACHINE,
+} nanafy_machine;
+
 typedef struct nanafy_info {
 	size_t relocation_info_count;
 	nanafy_relocation_info *relocation_infos;
@@ -583,6 +588,9 @@ extern void setup_nanafy_info_for_x64 (nanafy_endian, nanafy_info*);
 #include <stddef.h>
 
 extern void find_nanafy_relocation_info (nanafy_relocation_type, size_t, nanafy_info*, bool*, nanafy_relocation_info*);
+#include <nanafy.h>
+
+extern int setup_nanafy_info (nanafy_machine, nanafy_endian, nanafy_info*);
 #include <stddef.h>
 
 extern void init_nanafy_relative_relocation (size_t, size_t, size_t, nanafy_relocation*);
